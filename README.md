@@ -16,3 +16,4 @@ chmod +x dotfile_manager.fish
 ```fish
 ./dotfile_manager.fish
 ```
+3. For tmux to recognize the plugins you need [tpm](https://github.com/tmux-plugins/tpm) in ~/.tmux/plugins
