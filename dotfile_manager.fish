@@ -36,7 +36,8 @@ function manage --argument mode
     end
     #Loop over all folders in scripts directory
     # and backups them by mv * to *.bak 
-    for item in $script_dir/*
+    for item_relative in $script_dir/*
+        set item (path resolve $item_relative)
         # Skip ignored_items list
         if contains (basename $item) $ignored_items
             info "Skipped $item"
