@@ -2,13 +2,13 @@
 size = 14.0
 
 [font.normal]
-family = "CommitMono Nerd Font"
+family = "Iosevka Nerd Font"
 style = "Regular"
 
 [font.bold]
-family = "CommitMono Nerd Font"
+family = "Iosevka Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "CommitMono Nerd Font"
+family = "Iosevka Nerd Font"
 style = "Italic"
