@@ -5,7 +5,10 @@ alias c clear
 alias e exit
 alias coder "code -r"
 alias hx helix
+alias zd zeditor
+alias zn zen-browser
 # Replace ls with eza
+
 alias ls='eza --icons'
 alias ll='eza -l --icons'
 alias la='eza -a --icons'
@@ -54,3 +57,8 @@ end
 starship init fish | source
 
 fish_add_path /home/aaron/.spicetify
+
+# opencode
+fish_add_path /home/aaron/.opencode/bin
+# cuda
+fish_add_path /opt/cuda/bin

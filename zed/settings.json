@@ -1,0 +1,64 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "code_lens": "off",
+  "which_key": {
+    "enabled": true,
+  },
+  "buffer_font_family": ".ZedMono",
+  "agent_servers": {
+    "github-copilot-cli": {
+      "default_config_options": {
+        "allow_all": "off",
+        "reasoning_effort": "medium",
+        "model": "gpt-5.2-codex",
+      },
+      "type": "registry",
+    },
+  },
+  "languages": {
+    "C++": {
+      "inlay_hints": {
+        "show_background": false,
+        "show_value_hints": true,
+        "enabled": true,
+      },
+      "format_on_save": "on",
+    },
+  },
+  "edit_predictions": {
+    "provider": "copilot",
+  },
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "button": false,
+    "dock": "left",
+  },
+  "agent": {
+    "sidebar_side": "right",
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "right",
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark",
+  },
+}
