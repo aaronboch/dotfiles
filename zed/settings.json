@@ -7,17 +7,34 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "inlay_hints": {
+    "enabled": true
+  },
+  "terminal": {
+    "font_family": ".ZedMono",
+    "font_features": {
+      "liga": false,
+      "calt": false,
+    },
+  },
   "code_lens": "off",
   "which_key": {
     "enabled": true,
   },
   "buffer_font_family": ".ZedMono",
+  "buffer_font_features": {
+    "liga": false,
+    "calt": false,
+  },
   "agent_servers": {
+    "opencode": {
+      "type": "registry",
+    },
     "github-copilot-cli": {
       "default_config_options": {
         "allow_all": "off",
         "reasoning_effort": "medium",
-        "model": "gpt-5.2-codex",
+        "model": "auto",
       },
       "type": "registry",
     },
@@ -33,6 +50,7 @@
     },
   },
   "edit_predictions": {
+    "mode": "subtle",
     "provider": "copilot",
   },
   "project_panel": {
@@ -46,6 +64,17 @@
     "dock": "left",
   },
   "agent": {
+    "inline_assistant_model": {
+      "provider": "opencode",
+      "model": "free/big-pickle",
+      "enable_thinking": false,
+    },
+    "default_model": {
+      "provider": "openai",
+      "model": "gpt-5-mini",
+      "enable_thinking": true,
+      "effort": "medium",
+    },
     "sidebar_side": "right",
     "dock": "right",
     "favorite_models": [],
